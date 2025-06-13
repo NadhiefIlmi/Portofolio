@@ -124,6 +124,69 @@
             margin: 0 auto;
         }
 
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 0 10px;
+            }
+
+            .profile-photo {
+                margin: 0 auto;
+            }
+
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .profile-info {
+                text-align: center;
+            }
+
+            .profile-info h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .description {
+                font-size: 1rem;
+                max-width: 100%;
+            }
+
+            .cta-button {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .profile-info h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 0.9rem;
+            }
+
+            .description {
+                font-size: 0.9rem;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 0.8rem 1.5rem;
+            }
+        }
+
         .profile-photo {
             flex-shrink: 0;
         }
@@ -178,7 +241,6 @@
 
         .animated-description {
             animation: fadeInText 2s ease 0.6s forwards;
-            const project=projectDocs[projectId];
         }
 
         .super-animated-description {
